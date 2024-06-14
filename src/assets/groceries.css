@@ -1,0 +1,10 @@
+.strikethough{
+    display: none;
+}
+.strikethough+label {
+    font-size: 30pt;
+}
+.strikethough:checked+label {
+    color: darkgray;
+    text-decoration: line-through;
+}
