@@ -1,6 +1,12 @@
 import React from "react"
 
 function ContactUsPage() {
+
+    let handleSubmit = (e) => {
+        e.preventDefault()
+        alert("Submitted")
+    }
+
     return (
         <div>
             <h1>Contact Us</h1>
@@ -16,7 +22,7 @@ function ContactUsPage() {
                 <label htmlFor="messageArea">Message : </label>
                 <textarea name="message" id="messageArea"></textarea>
                 <br />
-                <button type="submit">Send</button>
+                <button type="submit" onClick={handleSubmit}>Send</button>
             </form>
         </div>
     )
